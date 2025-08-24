@@ -23,15 +23,15 @@ This is a graphics library that works with a combination of ESP32 with SPI, I2C,
 
 This library mimics [AdafruitGFX](https://github.com/adafruit/Adafruit-GFX-Library) and [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI) APIs while aiming for higher functional coverage and performances.
   
-既存のライブラリに対して、以下のアドバンテージがあります。  
-  - ArduinoESP32 / ESP-IDF 対応  
-  - 16bit / 24bitカラーモード両対応(実際の色数はディスプレイの仕様によります)  
-  - DMA転送を用いた通信動作中の別処理実行  
-  - オフスクリーンバッファ（スプライト）の高速な回転/拡縮描画  
-  - 複数ディスプレイの同時利用  
-  - モノクロディスプレイに対する減色描画の自動処理  
-  - [OpenCV,SDL2を描画先として利用でき、PC上で動作可能](examples_for_PC/README.md)  
-  - [コンポジットビデオ信号(NTSC,PAL)を出力できます (ESP32のみ)](doc/Panel_CVBS.md)
+It has the following advantages over existing libraries:  
+  - Compatible with ArduinoESP32/ESP-IDF
+  - Supports both 16-bit and 24-bit color modes (actual color depth depends on display specifications)
+  - DMA transfer allows for separate processing during communication  
+  - High-speed rotation/scale drawing of off-screen buffers (sprites)
+  - Simultaneous use of multiple displays
+  - Automatic processing of reduced color rendering for monochrome displays
+  - [OpenCV, SDL2 can be used as drawing destinations and can be run on a PC.](examples_for_PC/README.md)  
+  - [Can output composite video signals (NTSC, PAL) (ESP32 only)](doc/Panel_CVBS.md)
 
 This library has the following advantages.
   - ArduinoESP32 and ESP-IDF are supported.
@@ -92,6 +92,7 @@ This library has the following advantages.
     - NT35510/OTM8009A
     - R61529
     - RA8875
+    - RA8889 (In development)
     - RM68120
     - SH110x (SH1106, SH1107, M5Stack Unit OLED)
     - S6D04K1
