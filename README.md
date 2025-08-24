@@ -14,8 +14,8 @@ M5Stack / M5StickC / TTGO T-Watch / ODROID-GO / ESP-WROVER-KIT / WioTerminal / a
 [![examples](http://img.youtube.com/vi/SMOHRPqUZcQ/0.jpg)](http://www.youtube.com/watch?v=SMOHRPqUZcQ "examples")
 [![examples](http://img.youtube.com/vi/F5gsp41Elac/0.jpg)](http://www.youtube.com/watch?v=F5gsp41Elac "MultiPanel")
 
-概要 Overview.
-----------------
+Overview
+--------
 ESP32とSPI, I2C, 8ビットパラレル接続のディスプレイ / ESP8266とSPI接続のディスプレイ / ATSAMD51とSPI接続のディスプレイの組み合わせで動作するグラフィックライブラリです。  
 This is a graphics library that works with a combination of ESP32 with SPI, I2C, 8-bit parallel / ESP8266 with SPI / ATSAMD51 with SPI  to the Display. (see compatibility list below).
 
@@ -68,15 +68,15 @@ This library has the following advantages.
 |SAMD21  | supported  |
 |RP2040  | ---        |
 
-対応環境 Supported environments
+Supported environments
 ---------------
-  - プラットフォーム Platform
+  - Platform
     - ESP-IDF
     - Arduino ESP32
     - Arduino ATSAMD51 (Seeed)
     - Arduino RP2040
 
-  - ディスプレイ Displays
+  - Displays
     - GC9107 (M5AtomS3)
     - GC9A01
     - GDEW0154M09 (M5Stack CoreInk)
@@ -108,7 +108,7 @@ This library has the following advantages.
     - M5Stack Unit LCD
     - M5Stack AtomDisplay
 
-  - タッチスクリーン TouchScreens
+  - TouchScreens
     - I2C CST816S
     - I2C FT5x06 (FT5206, FT5306, FT5406, FT6206, FT6236, FT6336, FT6436)
     - I2C GSLx680 (GSL1680)
@@ -127,7 +127,7 @@ setting examples is [src/lgfx_user](src/lgfx_user)
 This library is also compatible with the above models and display panels with a similar command system,
  but only those that have been obtained and confirmed to work are officially supported.  
 
-使い方 How to use
+How to use
 ----------------
 [examples](examples/)に具体的なサンプルがあります。
 ### 基本的な使い方
@@ -530,14 +530,14 @@ Thanks to [IAMLIUBO](https://github.com/imliubo), for add Linux FrameBuffer supp
 Thanks to [rossum](https://github.com/rossumur) and [Roger Cheng](https://github.com/Roger-random), published the project to output a composite video signal from ESP32.
 
 
-使用ライブラリ included library  
+Included library  
 ----------------
 [TJpgDec](http://elm-chan.org/fsw/tjpgd/00index.html)  [ChaN](http://elm-chan.org/)  
 [Pngle](https://github.com/kikuchan/pngle)  [kikuchan](https://github.com/kikuchan/)  
 [QRCode](https://github.com/ricmoo/QRCode/)  [Richard Moore](https://github.com/ricmoo/) and [Nayuki](https://www.nayuki.io/page/qr-code-generator-library)  
 
 
-クレジット Credits
+Credits
 ----------------
   - Inspiration: [Bodmer](https://github.com/Bodmer)
   - Author: [lovyan03](https://github.com/lovyan03)
@@ -547,7 +547,7 @@ Thanks to [rossum](https://github.com/rossumur) and [Roger Cheng](https://github
     - [tobozo](https://github.com/tobozo)
 
 
-ライセンス License
+License
 ----------------
 main : [FreeBSD](license.txt)  
 TJpgDec : [original](src/lgfx/utility/lgfx_tjpgd.c) ChaN  
@@ -561,7 +561,7 @@ efont : [3-clause BSD](src/lgfx/Fonts/efont/COPYRIGHT.txt) The Electronic Font O
 TomThumb font : [3-clause BSD](src/lgfx/Fonts/GFXFF/TomThumb.h) Brian J. Swetland / Vassilii Khachaturov / Dan Marks  
 
 
-実装予定 Unimplemented request
+Unimplemented request
 ----------------
   - ディスプレイ Displays
     - SEPS525
